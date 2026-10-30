@@ -1,5 +1,7 @@
-name: check-all-parts
-on: [push, pull_request]
+'on':
+  push: null
+  pull_request: null
+  workflow_dispatch: null
 jobs:
   python-scripts:
     runs-on: ${{ matrix.os }}
